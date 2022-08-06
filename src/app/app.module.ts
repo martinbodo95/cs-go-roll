@@ -6,10 +6,11 @@ import { GraphQLModule } from 'src/graphql/graphql.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent, AppHeader],
-  imports: [BrowserModule, AppRoutingModule, GraphQLModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, GraphQLModule, HttpClientModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
