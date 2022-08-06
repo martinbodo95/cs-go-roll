@@ -1,0 +1,13 @@
+<div
+  class="box-list-item"
+  (mouseover)="showViewButton = true"
+  (mouseleave)="showViewButton = false"
+  (click)="openDetails(box.node)"
+>
+  <img src="{{ box.node.iconUrl }}" />
+  <ng-container *ngIf="!showViewButton">
+    <div class="box-name">{{ box.node.name }}</div>
+    <div>{{ box.node.cost }}</div>
+  </ng-container>
+  <button *ngIf="showViewButton" mat-raised-button>View</button>
+</div>

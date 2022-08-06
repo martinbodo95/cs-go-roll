@@ -1,0 +1,10 @@
+@use "src/variables.scss" as v;
+
+.box-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(v.$image-list-height, 1fr));
+  grid-gap: 16px;
+  padding: 16px;
+  padding-top: 76px;
+  background-color: v.$background-color;
+}

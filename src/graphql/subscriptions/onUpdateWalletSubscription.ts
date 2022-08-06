@@ -1,7 +1,7 @@
 import { gql } from 'apollo-angular';
 import { OnUpdateWalletPayload } from 'src/common/interfaces/OnUpdateWalletPayload';
 
-export const OnUpdateWalletSubscription = gql<OnUpdateWalletPayload, {}>`
+export const onUpdateWalletSubscription = gql<OnUpdateWalletPayload, {}>`
   subscription OnUpdateWallet {
     updateWallet {
       wallet {

@@ -1,7 +1,7 @@
 import { gql } from 'apollo-angular';
-import { CurrentUserPayload } from 'src/common/interfaces/CurrentUserPayload';
+import { BoxListPayload } from 'src/common/interfaces/BoxListPayload';
 
-export const BoxListQuery = gql<CurrentUserPayload, {}>`
+export const boxListQuery = gql<BoxListPayload, {}>`
   query {
     boxes(free: false, purchasable: true, openable: true) {
       edges {

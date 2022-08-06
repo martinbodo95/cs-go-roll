@@ -1,7 +1,7 @@
 import { gql } from 'apollo-angular';
 import { CurrentUserPayload } from 'src/common/interfaces/CurrentUserPayload';
 
-export const CurrentUserQuery = gql<CurrentUserPayload, {}>`
+export const currentUserQuery = gql<CurrentUserPayload, {}>`
   query {
     currentUser {
       id

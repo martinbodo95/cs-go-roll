@@ -1,0 +1,14 @@
+<div class="header">
+  <ng-container *ngIf="user$ | async as user; else login">
+    <div>username: {{ user.name }}</div>
+    <ng-container *ngIf="wallet$ | async as wallet">
+      <div>balance: {{ wallet.currency || user.wallet[0].currency }}</div>
+    </ng-container>
+  </ng-container>
+</div>
+
+<ng-template #login>
+  <a mat-raised-button color="primary" href="{{ steamCommunityLoginUrl }}"
+    >Login</a
+  >
+</ng-template>

@@ -1,0 +1,5 @@
+<div class="box-list-container">
+  <ng-container *ngFor="let box of boxes$ | async">
+    <app-box-list-item [box]="box"></app-box-list-item>
+  </ng-container>
+</div>
